@@ -216,5 +216,3 @@ fun ChipGroup.addChip(
         addView(this)
     }
 }
-
-fun damian() = 10
