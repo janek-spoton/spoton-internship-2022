@@ -215,3 +215,5 @@ fun ChipGroup.addChip(
         addView(this)
     }
 }
+
+fun janek(): Int = 5
