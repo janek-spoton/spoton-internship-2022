@@ -190,7 +190,7 @@ fun EditText.setCursorAtEnd() {
 }
 
 fun NestedScrollView.scrollToBottom() {
-    post { fullScroll(View.FOCUS_DOWN) }
+    post { fullScroll(View.FOCUS_UP) }
 }
 
 fun NestedScrollView.scrollVerticallyToView(view: View) {
@@ -215,3 +215,5 @@ fun ChipGroup.addChip(
         addView(this)
     }
 }
+
+fun janek(): Int = 5
