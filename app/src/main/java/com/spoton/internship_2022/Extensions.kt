@@ -190,7 +190,7 @@ fun EditText.setCursorAtEnd() {
 }
 
 fun NestedScrollView.scrollToBottom() {
-    post { fullScroll(View.FOCUS_UP) }
+    post { fullScroll(View.FOCUSABLES_TOUCH_MODE) }
 }
 
 fun NestedScrollView.scrollVerticallyToView(view: View) {
