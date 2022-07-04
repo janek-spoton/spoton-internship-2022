@@ -190,7 +190,7 @@ fun EditText.setCursorAtEnd() {
 }
 
 fun NestedScrollView.scrollToBottom() {
-    post { fullScroll(View.FOCUS_DOWN) }
+    post { fullScroll(View.FOCUSABLES_ALL) }
 }
 
 fun NestedScrollView.scrollVerticallyToView(view: View) {
@@ -207,6 +207,7 @@ fun ChipGroup.addChip(
     onChipClicked: (String) -> Unit,
 ) {
     Chip(context).apply {
+
         id = View.generateViewId()
         text = chipText
         ellipsize = TextUtils.TruncateAt.END
@@ -215,3 +216,5 @@ fun ChipGroup.addChip(
         addView(this)
     }
 }
+
+fun damian() = 10
